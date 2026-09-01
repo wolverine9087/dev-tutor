@@ -6,7 +6,7 @@ import {
     useState,
 } from "react";
 
-const API_URL = import.meta.env.VITE_API_URL;
+const API_URL = import.meta.env.VITE_API_URL || "http://localhost:3000/api";
 const AuthContext = createContext(null);
 
 async function authRequest(path, options = {}) {
@@ -146,7 +146,7 @@ export function useAuth() {
     const context = useContext(AuthContext);
 
     if (!context) {
-      throw new Error("useAuth must be used inside an AuthProvider");
+        throw new Error("useAuth must be used inside an AuthProvider");
     }
 
     return context;

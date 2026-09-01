@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import {Bot, Mic, Send, VolumeX, Sparkles } from "lucide-react";
 
-const API_URL = import.meta.env.VITE_API_URL;
+const API_URL = import.meta.env.VITE_API_URL || "http://localhost:8000/api";
 
 export default function AiChat() { 
     const [messages, setMessages] = useState([]);

@@ -217,7 +217,7 @@ function Quiz({
                 err.message === "Failed to fetch"
             ) {
                 setSubmitError(
-                    "Cannot connect to the backend. Make sure your server is running on https://dev-tutor-backend.onrender.com."
+                    "Cannot connect to the backend. Make sure your server is running on http://localhost:3000."
                 );
             } else {
                 setSubmitError(

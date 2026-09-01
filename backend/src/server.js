@@ -8,13 +8,14 @@ dns.setServers([
     "1.1.1.1"
 ]);
 
+const PORT = process.env.PORT || 8000;
 
 async function startServer() {
     try {
         await connectDB();
 
         app.listen(PORT, () => {
-            console.log(`https://dev-tutor-api.onrender.com`);
+            console.log(`Server running on http://localhost:${PORT}`);
         });
     } catch (error) {
         console.error("Failed to start server:", error);
