@@ -138,7 +138,7 @@ function Quiz({
             console.log("Answers:", answerArray);
 
             const response = await fetch(
-                `https://dev-tutor-backend.onrender.com/api/quizzes/${quizId}/submit`,
+                `http://localhost:3000/api/quizzes/${quizId}/submit`,
                 {
                     method: "POST",
                     credentials: "include",
