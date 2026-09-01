@@ -24,7 +24,7 @@ export default function Dashboard({
         const fetchQuizStats = async () => {
             try {
                 const response = await axios.get(
-                    "http://localhost:3000/api/progress/quiz-stats",
+                    "https://dev-tutor-backend.onrender.com/api/progress/quiz-stats",
                     {
                         withCredentials: true,
                     }

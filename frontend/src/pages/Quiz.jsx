@@ -138,7 +138,7 @@ function Quiz({
             console.log("Answers:", answerArray);
 
             const response = await fetch(
-                `http://localhost:3000/api/quizzes/${quizId}/submit`,
+                `https://dev-tutor-backend.onrender.com/api/quizzes/${quizId}/submit`,
                 {
                     method: "POST",
                     credentials: "include",
@@ -217,7 +217,7 @@ function Quiz({
                 err.message === "Failed to fetch"
             ) {
                 setSubmitError(
-                    "Cannot connect to the backend. Make sure your server is running on http://localhost:3000."
+                    "Cannot connect to the backend. Make sure your server is running on https://dev-tutor-backend.onrender.com."
                 );
             } else {
                 setSubmitError(
