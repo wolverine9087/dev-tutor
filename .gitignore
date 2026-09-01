@@ -1,0 +1,171 @@
+# ==========================================
+# DEPENDENCIES
+# ==========================================
+
+node_modules/
+**/node_modules/
+
+
+# ==========================================
+# ENVIRONMENT VARIABLES / SECRETS
+# ==========================================
+
+.env
+.env.local
+.env.development
+.env.development.local
+.env.test
+.env.test.local
+.env.production
+.env.production.local
+
+# Keep example environment files
+!.env.example
+
+
+# ==========================================
+# BUILD / PRODUCTION FILES
+# ==========================================
+
+dist/
+**/dist/
+
+build/
+**/build/
+
+out/
+**/out/
+
+
+# ==========================================
+# LOG FILES
+# ==========================================
+
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+logs/
+*.log.*
+
+
+# ==========================================
+# CACHE FILES
+# ==========================================
+
+.cache/
+.parcel-cache/
+.vite/
+.eslintcache
+.stylelintcache
+*.tsbuildinfo
+
+
+# ==========================================
+# COVERAGE
+# ==========================================
+
+coverage/
+.nyc_output/
+
+
+# ==========================================
+# TEMPORARY FILES
+# ==========================================
+
+tmp/
+temp/
+*.tmp
+*.temp
+
+
+# ==========================================
+# OPERATING SYSTEM FILES
+# ==========================================
+
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+
+# ==========================================
+# VS CODE
+# ==========================================
+
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
+!.vscode/tasks.json
+!.vscode/launch.json
+
+
+# ==========================================
+# OTHER IDE FILES
+# ==========================================
+
+.idea/
+*.iml
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+
+
+# ==========================================
+# TEST / DEBUG FILES
+# ==========================================
+
+.nyc_output/
+test-results/
+playwright-report/
+test-results/
+
+
+# ==========================================
+# GENERATED FILES
+# ==========================================
+
+*.generated.*
+*.cache
+
+
+# ==========================================
+# DATABASE / LOCAL DATA
+# ==========================================
+
+*.sqlite
+*.sqlite3
+*.db
+
+
+# ==========================================
+# UPLOADS / LOCAL STORAGE
+# ==========================================
+
+uploads/
+backend/uploads/
+frontend/uploads/
+
+
+# ==========================================
+# BACKUP FILES
+# ==========================================
+
+*.bak
+*.backup
+*.old
+
+
+# ==========================================
+# ZIP / ARCHIVE FILES
+# ==========================================
+
+*.zip
+*.tar
+*.tar.gz
